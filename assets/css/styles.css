@@ -4,7 +4,54 @@
   background-color: #555;
   color: white;
   text-align: center;
-  padding-top:10vh;
+  padding-top:20vh;
   height: 50vh;
-  font-size: 100;
+  font-size: 200;
+}
+#menu{
+  border: none;
+  background-color: inherit;
+}
+#menu:active{
+  border:none;
+}
+#menu:hover{
+  box-shadow: none;
+}
+.nav:active{
+  color: inherit;
+}
+#home{
+color:black;
+}
+#home:hover{
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+.icon{
+  height: 5vh;
+}
+.body{
+  text-align: center;
+  margin: 5vh;
+}
+.smallHide:hover{
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+button{
+  background-color: #555;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  border-color: #555;
+}
+button:hover{
+  background-color: red;
+  box-shadow: 5px 5px 5px #555;
+}
+.demoHover:hover{
+  color: red;
 }
