@@ -1,2 +1,10 @@
 
 /* css */
+.websiteName{
+  background-color: #555;
+  color: white;
+  text-align: center;
+  padding-top:10vh;
+  height: 30vh;
+  font-size: 100;
+}
