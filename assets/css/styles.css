@@ -12,14 +12,18 @@
   border: none;
   background-color: inherit;
 }
-#menu:active{
-  border:none;
-}
 #menu:hover{
   box-shadow: none;
 }
-.nav:active{
-  color: inherit;
+.nav{
+  font-weight: bold;
+}
+.nav a{
+  color:black;
+  text-decoration-color: red;
+}
+.nav a:hover{
+  text-decoration-color:red;
 }
 #home{
 color:black;
@@ -37,7 +41,6 @@ color:black;
   margin: 5vh;
 }
 .smallHide:hover{
-  font-weight: bold;
   text-decoration: underline;
   text-decoration-color: red;
 }

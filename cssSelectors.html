@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>&lt;/Styles&gt;</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+<!-- visible content goes here -->
+<div class = "container-fluid">
+<div class = "row nav">
+  <div class = "col-2">
+    <button id="menu"> <img src="assets/img/menuIcon.png" class ="icon"></button>
+    <a href ="index.html" id = "home"> &lt;/Styles&gt </a>
+  </div>
+  <div class = "col-3 smallHide">
+    <p> media queries</p>
+  </div>
+  <div class = "col-3 smallHide">
+    <p>selectors</p>
+  </div>
+  <div class = "col-3 smallHide">
+    <p>psuedo-classes</p>
+  </div>
+  <div class ="col-1">
+    <p> search </p>
+  </div>
+
+</div>
+<div class = "row websiteName">
+  <div class = "col-12">
+<h1>CSS Selectors</h1>
+</div>
+</div>
+</div>
+<div class ="container body">
+
+      <p> Selectors are elements that allows you to change the appearance of a
+        specific piece of your html. There are several different types of selectors.
+        The first of these we'll call html selectors, which are the tags used to
+        build the page. Next are classes & ids, which the user can assign to
+        parts of the html code. The third is interactive selectors, also called
+        psuedo classes. These change according to how the user has interacted with
+        your page. You can also use any combination of these to be even more
+        specific in where to apply these changes.<p>
+    <br>
+    <h2> HTML Selectors </h2>
+    <p> As mention above, you can change the visual element of your page by
+      identifying element by their html tags. On this page, we could use this to
+      change the color of the paragraphs using the &lt;p&gt; tag. That would look
+      something like this on your stylesheet: </p>
+      <h5><pre>
+     p{
+        text-align: center;
+        font-color: black;
+      }
+    </pre></h5>
+    <p> These tags are helpful when your doing general page formatting, such as
+      what we've done here. </p>
+    <br>
+    <h2> Classes & Ids </h2>
+    <p> Classes and Ids are very similar, in that they are classification that the
+      writer of the code gives to chunks of code. Classes are more general purpose,
+      as they can be assigned to as many different elements in a page. They are also
+      useful in that they overrule html level selectors. If you have a specific
+      paragraph that you'd like to have red text instead of black, then using
+      a class may be your best choice. When styling based on class, you should use
+      a period prior to the class name. In your stylesheet, this will look like
+      the following: </p>
+      <h5><pre>
+        .className{
+          color:red;
+        }
+      </pre></h5>
+    <p> What seperates classes and Ids is that an Id is a more specific selector.
+      Unlike a class, Ids can only be used once per page, and overrule html selectors
+      as well as classes.Generally, it is best to avoid Ids unless you have a
+      very specific purpose. We use a pound sign/hashtag to style an Id. In your
+      style sheet, this will look like:</p>
+      <h5><pre>
+        #idName{
+          color:red;
+        }
+      </pre></h5>
+</div>
+
+<!-- javascripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
