@@ -18,12 +18,18 @@
 .nav{
   font-weight: bold;
 }
-.nav a{
-  color:black;
-  text-decoration-color: red;
+.nav:hover{
+  text-decoration: none;
 }
-.nav a:hover{
+a{
+  text-decoration: none;
+  text-decoration-color: red;
+  color: black;
+  font-weight: bold;
+}
+a:hover{
   text-decoration-color:red;
+  color: black;
 }
 #home{
 color:black;
