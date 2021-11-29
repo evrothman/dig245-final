@@ -1,5 +1,6 @@
 
 /* css */
+
 .websiteName{
   background-color: #555;
   color: white;
@@ -8,27 +9,18 @@
   height: 50vh;
   font-size: 200;
 }
-#menu{
-  border: none;
-  background-color: inherit;
-}
-#menu:hover{
-  box-shadow: none;
-}
-.nav{
-  font-weight: bold;
 }
 .nav:hover{
   text-decoration: none;
 }
 a{
   text-decoration: none;
-  text-decoration-color: red;
+  text-decoration-color: #c5312d;
   color: black;
   font-weight: bold;
 }
 a:hover{
-  text-decoration-color:red;
+  text-decoration-color:#c5312d;
   color: black;
 }
 #home{
@@ -37,7 +29,7 @@ color:black;
 #home:hover{
   font-weight: bold;
   text-decoration: underline;
-  text-decoration-color: red;
+  text-decoration-color: #c5312d;
 }
 .icon{
   height: 5vh;
@@ -48,7 +40,7 @@ color:black;
 }
 .smallHide:hover{
   text-decoration: underline;
-  text-decoration-color: red;
+  text-decoration-color: #c5312d;
 }
 button{
   background-color: #555;
@@ -58,9 +50,22 @@ button{
   border-color: #555;
 }
 button:hover{
-  background-color: red;
+  border-color: black;
   box-shadow: 5px 5px 5px #555;
 }
 .demoHover:hover{
-  color: red;
+  color: #c5312d;
+}
+.nav-link:hover{
+  text-decoration: underline;
+  text-decoration-color: #c5312d;
+}
+#search{
+  color: #c5312d;
+  border-color: #c5312d;
+}
+#search:hover{
+  color: white;
+  border-color: #c5312d;
+  background-color: #c5312D;
 }
