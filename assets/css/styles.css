@@ -43,14 +43,16 @@ color:black;
   text-decoration-color: #c5312d;
 }
 button{
-  background-color: #555;
-  color: white;
+  background-color: white;
+  color: #c5312D;
   border-radius: 10px;
   font-weight: bold;
-  border-color: #555;
+  border-color: #c5312D;
 }
 button:hover{
-  border-color: black;
+  border-color: #c5312D;
+  background-color:#c5312D;
+  color: white;
   box-shadow: 5px 5px 5px #555;
 }
 .demoHover:hover{
