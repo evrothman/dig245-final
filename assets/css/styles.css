@@ -69,3 +69,16 @@ button:hover{
   border-color: #c5312d;
   background-color: #c5312D;
 }
+.searchSpace{
+  border-color: #c5312d;
+}
+.searchSpace:active{
+  background-color: white;
+  color: black;
+  border-color: #c5312d;
+}
+.searchSpace:hover{
+  background-color: white;
+  color: black;
+  border-color: #c5312d;
+}
