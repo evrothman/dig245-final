@@ -69,23 +69,21 @@
 <div class="container-fluid">
 <div class = "row websiteName">
   <div class = "col-12">
-<h1>@media Rule</h1>
+<h1>@media Operators</h1>
 </div>
 </div>
 </div>
 <div class = "container">
 
   <div class = "row">
-    <div class="col-lg-7 body">
+    <div class="col-lg-5 body">
     There are three operators for the media rule that expand how you can use them.
-    The first of these is the and operator. This allows you to tell css to change the style
+    The first of these is the "and" operator. This allows you to tell css to change the style
     of your page only when more than one condition is met. For example, the code to
     the right makes it so that the box will turn grey only when the screen width is between
     480 pixels and 780 pixels.
-    </style>
-      <a href="psuedo-classes.html;"><button>psuedo-classes</button></a>
     </div>
-  <div class="col-lg-4">
+  <div class="col-lg-6">
     <br>
       <h4 id="operatorDemo1" class="demoHead"> stylesheet formatting</h4>
     <div class = "demo">
@@ -99,6 +97,51 @@
     </pre></h5>
     </div>
   </div>
+</div>
+<div class = "row">
+  <div class="col-lg-5 body">
+    The second of these operators is "not" and it does exactly what you would think.
+    It flips all of the media queries that are made within it section. As with
+    other aspects of css, these are seperated with commas. For example, if I wanted to
+    write the same media rule as before, but using the not operator, it would look
+    like what is shown on the right.
+  </div>
+<div class="col-lg-6">
+  <br>
+  <div class = "demo">
+    <h5><pre>
+    @media not (max-width: 480px), not (min-width: 780px){
+     .className{
+        background-color: #555;
+        width: 90vw;
+      }
+    }
+  </pre></h5>
+  </div>
+</div>
+</div>
+<div class = "row">
+  <div class="col-lg-5 body">
+    The third of these is the "only" operator.  The only keyword prevents older
+    browsers that do not support media queries with media features from applying
+    the specified styles. It has no effect on modern browsers. For example,
+    my browser wouldn't be effected by the addition of the "only" operator
+    listed to the right, but my father's office computer that runs Windows 95 would
+    be, as it is told to not even attempt to change based on the brower's media.
+  </div>
+<div class="col-lg-6">
+  <br>
+  <div class = "demo">
+    <h5><pre>
+      @media only (min-width: 480px) and (max-width: 780px){
+       .className{
+          background-color: #555;
+          width: 90vw;
+        }
+      }
+  </pre></h5>
+  </div>
+</div>
 </div>
 </div>
 </body>
