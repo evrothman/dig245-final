@@ -5,8 +5,8 @@
   background-color: #555;
   color: white;
   text-align: center;
-  padding-top:20vh;
-  height: 50vh;
+  padding-top:15vh;
+  height: 40vh;
   font-size: 200;
 }
 }
@@ -23,20 +23,15 @@ a:hover{
   text-decoration-color:#c5312d;
   color: black;
 }
-#home{
-color:black;
-}
-#home:hover{
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: #c5312d;
-}
 .icon{
   height: 5vh;
 }
 .body{
-  text-align: center;
   margin: 5vh;
+  text-align: left;
+}
+h2{
+  text-align: center;
 }
 .smallHide:hover{
   text-decoration: underline;
@@ -83,4 +78,20 @@ button:hover{
   background-color: white;
   color: black;
   border-color: #c5312d;
+}
+.demoHead{
+  background-color: #c5312D;
+  min-height: 8vh;
+  color: white;
+  padding: 3vh;
+   border-radius: 5px;
+}
+.demo{
+min-height: 8vh;
+border-style: solid;
+border-radius: 5px;
+padding: 1vh;
+}
+.intro{
+  padding: 3vh;
 }
