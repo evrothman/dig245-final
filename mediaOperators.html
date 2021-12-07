@@ -69,7 +69,7 @@
 <div class="container-fluid">
 <div class = "row websiteName">
   <div class = "col-12">
-<h1>&lt;/Styles&gt;</h1>
+<h1>@media Rule</h1>
 </div>
 </div>
 </div>
@@ -77,15 +77,26 @@
 
   <div class = "row">
     <div class="col-lg-7 body">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed gravida mauris, quis consectetur dui. In id pretium metus. Nunc elit odio, interdum ac est id, semper tempus justo. Ut et enim arcu. Quisque ultricies ultrices leo, et tincidunt augue lacinia ut. Donec tincidunt libero ultrices erat mattis, sit amet lacinia urna sodales. In scelerisque at risus ut rhoncus. Maecenas orci massa, commodo in orci sit amet, consectetur venenatis elit. Sed ut mollis lectus. Sed posuere, risus non interdum suscipit, metus dolor aliquam elit, at hendrerit erat turpis sit amet nisi. Sed id pulvinar nisl, a sagittis lectus. Maecenas ut nisl a metus tempor feugiat eget in urna. Cras id sem a turpis facilisis tempor. Aliquam dolor mauris, dignissim ac nisl eget, lacinia ornare felis. Mauris vulputate sem quis turpis fringilla tempus. Praesent ut suscipit nunc.
+    There are three operators for the media rule that expand how you can use them.
+    The first of these is the and operator. This allows you to tell css to change the style
+    of your page only when more than one condition is met. For example, the code to
+    the right makes it so that the box will turn grey only when the screen width is between
+    480 pixels and 780 pixels.
+    </style>
+      <a href="psuedo-classes.html;"><button>psuedo-classes</button></a>
     </div>
-  <div class = "col-lg-4">
+  <div class="col-lg-4">
     <br>
-      <h4 class="demoHead"> relevant pages </h4>
+      <h4 id="operatorDemo1" class="demoHead"> stylesheet formatting</h4>
     <div class = "demo">
-      <a class="dropdown-item" href="hover.html">:hover</a>
-      <a class="dropdown-item" href="hover.html">:hover</a>
-      <a class="dropdown-item" href="hover.html">:hover</a>
+      <h5><pre>
+      @media (min-width: 480px) and (max-width: 780px){
+       .className{
+          background-color: #555;
+          width: 90vw;
+        }
+      }
+    </pre></h5>
     </div>
   </div>
 </div>

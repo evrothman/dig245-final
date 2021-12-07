@@ -69,7 +69,7 @@
 <div class="container-fluid">
 <div class = "row websiteName">
   <div class = "col-12">
-<h1>&lt;/Styles&gt;</h1>
+<h1>@media Rule</h1>
 </div>
 </div>
 </div>
@@ -77,15 +77,31 @@
 
   <div class = "row">
     <div class="col-lg-7 body">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed gravida mauris, quis consectetur dui. In id pretium metus. Nunc elit odio, interdum ac est id, semper tempus justo. Ut et enim arcu. Quisque ultricies ultrices leo, et tincidunt augue lacinia ut. Donec tincidunt libero ultrices erat mattis, sit amet lacinia urna sodales. In scelerisque at risus ut rhoncus. Maecenas orci massa, commodo in orci sit amet, consectetur venenatis elit. Sed ut mollis lectus. Sed posuere, risus non interdum suscipit, metus dolor aliquam elit, at hendrerit erat turpis sit amet nisi. Sed id pulvinar nisl, a sagittis lectus. Maecenas ut nisl a metus tempor feugiat eget in urna. Cras id sem a turpis facilisis tempor. Aliquam dolor mauris, dignissim ac nisl eget, lacinia ornare felis. Mauris vulputate sem quis turpis fringilla tempus. Praesent ut suscipit nunc.
+      <p>The @media rule is one of the more complicated elements of CSS, but is extremely
+      useful in improving the usability of a website. Returning to the example of <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/bootstrap">
+      bootstrap</a>, the column system it uses changes based on the width of a user's
+      view window. This is something that we can recreate with the @media rule.
+      Essentially, the @media rule brings in data from a user's computer, and then
+      a coder (like youself) can tell the website to look a certain way based on whether that is the case.
+      These data include the view width, view height, device orientation, and many others.
+      After you have defined your media rule, you place all the style changes within
+      the curly brackets of that media rule.
+      For example, the box to the right will move below this text when the screen is small enough,
+      and the color of the red box will change to grey.</p>
+      <a href="mediaOperators.html;"><button>media operators</button></a>
     </div>
-  <div class = "col-lg-4">
+  <div class="col-lg-4">
     <br>
-      <h4 class="demoHead"> relevant pages </h4>
+      <h4 id="mediaDemo" class="demoHead"> stylesheet formatting</h4>
     <div class = "demo">
-      <a class="dropdown-item" href="hover.html">:hover</a>
-      <a class="dropdown-item" href="hover.html">:hover</a>
-      <a class="dropdown-item" href="hover.html">:hover</a>
+      <h5><pre>
+      @media (max-width: 780px){
+       .className{
+          background-color: #555;
+          width: 90vw;
+        }
+      }
+    </pre></h5>
     </div>
   </div>
 </div>
