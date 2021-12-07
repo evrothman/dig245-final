@@ -38,11 +38,10 @@ h2{
   text-decoration-color: #c5312d;
 }
 button{
-  background-color: white;
-  color: #c5312D;
+  background-color: #555;
+  color: white;
   border-radius: 10px;
   font-weight: bold;
-  border-color: #c5312D;
 }
 button:hover{
   border-color: #c5312D;
@@ -87,10 +86,10 @@ button:hover{
    border-radius: 5px;
 }
 .demo{
-min-height: 8vh;
 border-style: solid;
 border-radius: 5px;
 padding: 1vh;
+list-style-type: none;
 }
 .intro{
   padding: 3vh;
