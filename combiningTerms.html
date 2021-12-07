@@ -69,25 +69,72 @@
 <div class="container-fluid">
 <div class = "row websiteName">
   <div class = "col-12">
-<h1>&lt;/Styles&gt;</h1>
+<h1>Combining Terms</h1>
 </div>
 </div>
 </div>
 <div class = "container">
-
   <div class = "row">
     <div class="col-7 body">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed gravida mauris, quis consectetur dui. In id pretium metus. Nunc elit odio, interdum ac est id, semper tempus justo. Ut et enim arcu. Quisque ultricies ultrices leo, et tincidunt augue lacinia ut. Donec tincidunt libero ultrices erat mattis, sit amet lacinia urna sodales. In scelerisque at risus ut rhoncus. Maecenas orci massa, commodo in orci sit amet, consectetur venenatis elit. Sed ut mollis lectus. Sed posuere, risus non interdum suscipit, metus dolor aliquam elit, at hendrerit erat turpis sit amet nisi. Sed id pulvinar nisl, a sagittis lectus. Maecenas ut nisl a metus tempor feugiat eget in urna. Cras id sem a turpis facilisis tempor. Aliquam dolor mauris, dignissim ac nisl eget, lacinia ornare felis. Mauris vulputate sem quis turpis fringilla tempus. Praesent ut suscipit nunc.
+      Combining terms in your stylesheet can be useful for a handful of reasons.
+      First, it can allow you to streamline your stylesheet by only needing to define
+      a set of styles for multiple selectors at the same time. This is done by
+      seperating the elements with a comma. For example, the styles to the left
+      will apply to both the class and all paragraph elements.
     </div>
   <div class = "col-4">
     <br>
-      <h4 class="demoHead"> relevant pages </h4>
+      <h4 class="demoHead"> Stylesheet Formatting </h4>
     <div class = "demo">
-      <a class="dropdown-item" href="hover.html">:hover</a>
-      <a class="dropdown-item" href="hover.html">:hover</a>
-      <a class="dropdown-item" href="hover.html">:hover</a>
+    <h5><pre>
+      .className, p{
+        color: black;
+        text-align: left;
+      }
+    </pre></h5>
     </div>
   </div>
+</div>
+<div class = "row">
+  <div class="col-7 body">
+  Another way that you can combine terms is using "decendant" elements. In css, a
+  decendant is a element that is nested inside another element.
+  Essentally, you are able to style only the classes, ids, etc that are within another class, id, etc.
+  For example, the code on the right will only style the class when that class is nested
+  inside of a div.
+</div>
+<div class = "col-4">
+  <br>
+  <div class = "demo">
+  <h5><pre>
+    div .className{
+      color: black;
+      text-align: left;
+    }
+  </pre></h5>
+  </div>
+</div>
+</div>
+<div class = "row">
+  <div class="col-7 body">
+The third way that you can combine terms is by only targeting selectors with a
+particular class. This can be helpful when a class is used frequently within your code,
+but you need to style some of these element slightly differently. Using the code on the right
+you can target only paragraphs with the class. Similar notation is used for psuedo classes,
+but these are more complex and require a section of their own.
+<a href="psuedo-classes.html"> <button>psuedoClasses</button>
+</div>
+<div class = "col-4">
+  <br>
+  <div class = "demo">
+  <h5><pre>
+    p.className{
+      color: red;
+      text-align: right;
+    }
+  </pre></h5>
+  </div>
+</div>
 </div>
 </div>
 </body>
