@@ -10,6 +10,9 @@
 <!-- CSS -->
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 <script async src="https://cse.google.com/cse.js?cx=bfd3510460316e81a"></script>
 </head>
@@ -63,45 +66,50 @@
   </div>
 </nav>
 <body>
-<!-- visible content goes here -->
-
-<div class = "container-fluid">
+<div class="container-fluid">
 <div class = "row websiteName">
   <div class = "col-12">
-<h1>Hover</h1>
+<h1>@media Rule</h1>
 </div>
 </div>
 </div>
-<div class ="container">
-  <div class = "row">
-    <div class ="col-7 body">
-      <p> The most important thing to remember about the hover element is that
-        is that it is appended to the end of an html element, class, or id using a colon.
-        What this allows you to do is change the look of your element when a user
-        is hovering over it just as you would any other css element. for example,
-      if you hover over the selector above, the text color will change. While this is a common
-      use case, you can change any styling based on whether or not a user is hovering.</p>
-      <a href="active.html"><button>active</button> </a>
-    </div>
-    <div class="col-4">
-    </br>
-    <div class="demoHead">
-      Stylesheet Formatting
-    </div>
-    <div class="demo">
-      <br>
-        <h5 class = "hoverDemo"><pre>
-        #yourID:hover{
-          color:red;
-        }
-      </pre></h5>
-    </div>
-  </div>
-  </div>
-</div>
+<div class = "container">
 
+  <div class = "row">
+    <div class="col-lg-7 body">
+      <p>The @media rule is one of the more complicated elements of CSS, but is extremely
+      useful in improving the usability of a website. Returning to the example of <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/bootstrap">
+      bootstrap</a>, the column system it uses changes based on the width of a user's
+      view window. This is something that we can recreate with the @media rule.
+      Essentially, the @media rule brings in data from a user's computer, and then
+      a coder (like youself) can tell the website to look a certain way based on whether that is the case.
+      These data include the view width, view height, device orientation, and many others.
+      After you have defined your media rule, you place all the style changes within
+      the curly brackets of that media rule.
+      For example, the box to the right will move below this text when the screen is small enough,
+      and the color of the red box will change to grey.</p>
+      <a href="mediaOperators.html"><button>media operators</button></a>
+    </div>
+  <div class="col-lg-4">
+    <br>
+      <h4 id="mediaDemo" class="demoHead"> stylesheet formatting</h4>
+    <div class = "demo">
+      <h5><pre>
+      @media (max-width: 780px){
+       .className{
+          background-color: #555;
+          width: 90vw;
+        }
+      }
+    </pre></h5>
+    </div>
+  </div>
+</div>
+</div>
+</body>
 <!-- javascripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="assets/js/main.js"></script>
 </body>
