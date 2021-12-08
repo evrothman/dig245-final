@@ -56,7 +56,7 @@
             <li><a class="dropdown-item" href="psuedo-classes.html">introduction</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="hover.html">hover</a></li>
-            <li><a class="dropdown-item" href="active.html">active</a></li>
+            <li><a class="dropdown-item" href="valid.html">valid</a></li>
             <li><a class="dropdown-item" href="visited.html">visited</a></li>
           </ul>
         </li>
@@ -69,38 +69,40 @@
 <div class="container-fluid">
 <div class = "row websiteName">
   <div class = "col-12">
-<h1>@media Rule</h1>
+<h1>Visited</h1>
 </div>
 </div>
 </div>
 <div class = "container">
 
   <div class = "row">
-    <div class="col-lg-7 body">
-      <p>The @media rule is one of the more complicated elements of CSS, but is extremely
-      useful in improving the usability of a website. Returning to the example of <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/bootstrap">
-      bootstrap</a>, the column system it uses changes based on the width of a user's
-      view window. This is something that we can recreate with the @media rule.
-      Essentially, the @media rule brings in data from a user's computer, and then
-      a coder (like youself) can tell the website to look a certain way based on whether that is the case.
-      These data include the view width, view height, device orientation, and many others.
-      After you have defined your media rule, you place all the style changes within
-      the curly brackets of that media rule.
-      For example, the box to the right will move below this text when the screen is small enough,
-      and the color of the red box will change to grey.</p>
-      <a href="mediaOperators.html"><button>media operators</button></a>
+    <div class="col-lg-6 body">
+      <p>
+        A third type of psuedo-class is location based classes. These are most commonly
+        used to differentiate whether a link has been visited or not, though
+        they have other uses as well. HTML without css makes hyperlinks
+        blue when they have not been visited, and then purple once visited. However
+        by using psuedo-classes, we can customize both of these. we also have the option
+        of having it be the same when it is both unvisited or visited. The psuedo-class
+        "visited" designates the style of a visited page, and "link" designates
+        an unvisited hyperlink.
+      </p>
     </div>
-  <div class="col-lg-4">
+  <div class="col-lg-5">
     <br>
       <h4 id="mediaDemo" class="demoHead"> stylesheet formatting</h4>
     <div class = "demo">
       <h5><pre>
-      @media (max-width: 780px){
-       .className{
-          background-color: #555;
-          width: 90vw;
+        a:link{
+          color: blue;
+          text-decoration: underline;
+          text-decoration-color: blue;
         }
-      }
+        a:visted{
+          color: purple;
+          text-decoration: underline;
+          text-decoration-color: purple;
+        }
     </pre></h5>
     </div>
   </div>
