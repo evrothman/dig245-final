@@ -87,6 +87,7 @@ button:hover{
 }
 .demo{
 border-style: solid;
+border-color: #c5312D;
 border-radius: 5px;
 padding: 1vh;
 list-style-type: none;
